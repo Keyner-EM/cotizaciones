@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block titulo %}  nueva cotizacion {% endblock %}
+
+{% block contenido %} 
+
+
+<div class="card">
+    <div class="card-header">
+        Formulario de compra
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Daros personales</h4>
+
+        {% include 'cotizaciones/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
+
+{% endblock %}

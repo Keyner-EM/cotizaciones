@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block titulo %} Cotizaciones realizadas {% endblock %}
+
+{% block contenido %} 
+<div class="card">
+    <div class="card-header">
+        Listar Cotizaciones
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Cotizaciones</h4>
+
+        <div class="table">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Medio de Pago</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>1</td>
+                        <td>Juan</td>
+                        <td>3248254863</td>
+                        <td>dfghjkl@ghjk.com</td>
+                        <td>calle 55 ca555</td>
+                        <td>Tv samsung 45 pulgadas</td>
+                        <td>Contra entrega</td>
+                        <td>852458962563</td>
+                        <td> <a name="" id="" class="btn btn-info" href="#" role="button">Exitoso</a> 
+                            | <a name="" id="" class="btn btn-danger" href="#" role="button">Cancelar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+
+    </div>
+</div>
+{% endblock %}
