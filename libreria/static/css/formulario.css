@@ -115,6 +115,7 @@ header a:hover{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    height: auto;
 }
 /*Titulo producto seleccionado*/
 .title{
@@ -127,6 +128,7 @@ body{
     border: 1px solid rgb(225, 225, 225);
     border-radius: 20px;
     margin-left: 150px;
+    margin-right: 50px;
 }
 
 .producto-select{
@@ -138,15 +140,15 @@ body{
     font-size: 25px;
 }
 
-
-/*formulario para realizar la compra del producto*/
 .contenedor{
     margin-left: 850px;
-    width: 400px;
+    margin-right: 150px;
+    width: 340px;
     padding: 25px;
     background: rgba(225,225,225,.5);
     border-radius: 10px;
 }
+
 .contenedor h2{
     margin: 0 0 30px;
     padding: 0;
@@ -155,14 +157,13 @@ body{
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-.contenedor .elemento label{
-    color: #000;
-}
+
 .contenedor .elemento input{
     width: 100%;
-    padding: 10 0;
+    padding: 15 0;
     color: #000;
     background: transparent;
+    font-size: 15px;
     border: none;
     border-bottom: 1px solid gray;
     margin-bottom: 30px;
@@ -180,7 +181,7 @@ body{
 
 .contenedor .elemento2 input{
     width: 100%;
-    padding: 10 0;
+    padding: 50 0;
     color: #fff;
     background: transparent;
     border: none;
@@ -196,13 +197,17 @@ body{
     border: none;
     letter-spacing: 5px;
     text-transform: uppercase;
+    font-size: 15px;
     cursor: pointer;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
-
+.contenedor label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
 
 .contenedor .elemento3{
     color: #000;
@@ -217,6 +222,7 @@ body{
     text-align: center;
     font-size: 15px;
     margin-bottom: 10px;
+
 }
 
 .contenedor h4{
@@ -232,73 +238,3 @@ body{
     text-decoration: underline;
     color: rgb(223, 53, 53);
 }
-
-/*Link para volver al comercio*/
-.volver a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    background-color: rgb(223, 53, 53);
-    padding: 10px;
-    margin-left: 150px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-}
-
-.volver a:hover{
-    color: #000;
-    font-weight: bold;
-}
-
-.boton{
-    width: 250px; height: 50px;
-    background-color:red;
-    border-radius: .5em;
-    cursor: pointer;
-    transition: background-color 1s;
-}
-
-.boton:hover{
-    background-color: gray;
-
-
-}
-
-.boton p{
-    text-align: center;
-    font-size:  1.2em; font-weight: bold;
-    color: white;
-    line-height: 3em;
-}
-
-div{
-    width: 33.33%;
-}
-
-.boton a:hover {
-    color: #000;
-    font-weight: bold;
-}
-
-
-/*Footer*/
-
-footer{
-    background-color: rgb(230,230,230);
-    margin-top: 20px;
-    padding-top: 50px;
-
-}
-footer{
-    padding: 5px 12px;
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-    margin-bottom: 12px;
-}
-

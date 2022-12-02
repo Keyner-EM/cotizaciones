@@ -26,18 +26,25 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for cotizacion in cotizaciones %}
                     <tr class="">
-                        <td>1</td>
-                        <td>Juan</td>
-                        <td>3248254863</td>
-                        <td>dfghjkl@ghjk.com</td>
-                        <td>calle 55 ca555</td>
-                        <td>Tv samsung 45 pulgadas</td>
-                        <td>Contra entrega</td>
-                        <td>852458962563</td>
-                        <td> <a name="" id="" class="btn btn-info" href="#" role="button">Exitoso</a> 
-                            | <a name="" id="" class="btn btn-danger" href="#" role="button">Cancelar</a></td>
-                    </tr>
+                        <td>{{ cotizacion.id }}</td>
+                        <td>{{ cotizacion.Nombre }}</td>
+                        <td>{{ cotizacion.Telefono }}</td>
+                        <td>{{ cotizacion.Correo }}</td>
+                        <td>{{ cotizacion.Dirección }}</td>
+                        <td>{{ cotizacion.Producto }}</td>
+                        <td>{{ cotizacion.Medio_de_pago }}</td>
+                        <td>{{ cotizacion.Precio_Total }}</td>
+                        <td> 
+                            <a name="" id="" class="btn btn-info" href="#" role="button">Exitoso</a> 
+                            | <form action="" method="DELETE">
+                                <input type="number" hidden value="{{ cotizacion.id }}" name="id">
+                                <button type="submit" class="btn btn-danger">Cancelar</button>
+                            </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
